@@ -47,7 +47,7 @@ private String command;
         this.user = new User("",userList.getUserId());
     }
 
-    // You ask why I have this empty constructor here? Well I have don't know either, but it won't work without it :D
+    // You ask why I have this empty constructor here? Well I don't know either, but it won't work without it :D
     public CommandInterpreter() {
     }
 
