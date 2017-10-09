@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a090f008-f23c-479e-83df-5a7d0da251a9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chatserver/ChatMessage.java" afterPath="$PROJECT_DIR$/src/chatserver/ChatMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chatserver/CommandInterpreter.java" afterPath="$PROJECT_DIR$/src/chatserver/CommandInterpreter.java" />
-    </list>
+    <list default="true" id="a090f008-f23c-479e-83df-5a7d0da251a9" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,11 +22,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommandInterpreter.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CommandInterpreter.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/chatserver/CommandInterpreter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1659">
-              <caret line="168" column="160" lean-forward="false" selection-start-line="168" selection-start-column="160" selection-end-line="168" selection-end-column="160" />
+            <state relative-caret-position="441">
+              <caret line="219" column="60" lean-forward="false" selection-start-line="219" selection-start-column="51" selection-end-line="219" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/chatserver/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -55,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChatMessage.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ChatMessage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/chatserver/ChatMessage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="37" column="17" lean-forward="true" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+            <state relative-caret-position="426">
+              <caret line="36" column="94" lean-forward="true" selection-start-line="36" selection-start-column="94" selection-end-line="36" selection-end-column="94" />
               <folding />
             </state>
           </provider>
@@ -323,14 +330,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/chatserver/CommandInterpreter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1659">
-          <caret line="168" column="160" lean-forward="false" selection-start-line="168" selection-start-column="160" selection-end-line="168" selection-end-column="160" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/chatserver/ChatHistory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -339,10 +338,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/chatserver/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/chatserver/ChatMessage.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="36" column="94" lean-forward="true" selection-start-line="36" selection-start-column="94" selection-end-line="36" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chatserver/CommandInterpreter.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
-          <caret line="37" column="17" lean-forward="true" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+          <caret line="219" column="60" lean-forward="false" selection-start-line="219" selection-start-column="51" selection-end-line="219" selection-end-column="60" />
           <folding />
         </state>
       </provider>
