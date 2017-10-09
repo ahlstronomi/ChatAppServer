@@ -162,12 +162,11 @@ private String command;
      */
 
     private void helpCommand() {
-        outputStream.println("\n**** ChatApp Commands ****");
-        outputStream.println("!quit - logout");
-        outputStream.println("!messages - Show the message history");
-        outputStream.println("!users - Show all users online");
-        outputStream.println("!user yourUserNameHere - Login. If you already have logged in, you can change your username with this command.");
-        outputStream.println("****************************");
+        outputStream.println("x¢NOTIFICATION¢x¢**** ChatApp Commands ****");
+        outputStream.println("x¢NOTIFICATION¢x¢!quit - logout");
+        outputStream.println("x¢NOTIFICATION¢x¢!messages - Show the message history");
+        outputStream.println("x¢NOTIFICATION¢x¢!users - Show all users online");
+        outputStream.println("x¢NOTIFICATION¢x¢!user yourUserNameHere - Login. If you already have logged in, you can change your username with this command.");
     }
 
     /**

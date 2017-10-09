@@ -24,7 +24,7 @@ public class ChatMessage extends CommandInterpreter {
         this.senderId = u.getUserId();
         this.senderName = u.getUsername();
         this.message = msg;
-        DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm");
+        DateFormat dateFormat = new SimpleDateFormat("HH:mm");
         this.timeStamp = dateFormat.format(new Date());
     }
 
