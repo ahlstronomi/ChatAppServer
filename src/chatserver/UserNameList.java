@@ -72,13 +72,13 @@ public class UserNameList extends CommandInterpreter {
 
     public String toString() {
         StringBuilder history = new StringBuilder();
-        history.append("x¢NOTIFICATION¢x¢\n***** USERS ONLINE *****");
+        history.append("x¢NOTIFICATION¢x¢***** USERS ONLINE *****\n");
 
         for (User u : userNameList) {
-            history.append(u.getUsername()).append("\n");
+            history.append("x¢NOTIFICATION¢x¢" + u.getUsername() + "\n");
         }
 
-        history.append("************************");
+        history.append("x¢NOTIFICATION¢x¢************************\n");
         return history.toString();
 
     }

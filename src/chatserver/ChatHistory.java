@@ -80,13 +80,13 @@ public class ChatHistory implements Observable {
     public String toString() {
 
         StringBuilder history = new StringBuilder();
-        history.append("x¢NOTIFICATION¢x¢\n***** CHAT HISTORY *****");
+        history.append("x¢NOTIFICATION¢x¢***** CHAT HISTORY *****\n");
 
         for (ChatMessage m : chatHistory) {
-            history.append(m.toString()).append("\n");
+            history.append("x¢NOTIFICATION¢x¢" + m.toString() + "\n");
         }
 
-        history.append("************************");
+        history.append("x¢NOTIFICATION¢x¢************************\n");
         return history.toString();
 
     }
