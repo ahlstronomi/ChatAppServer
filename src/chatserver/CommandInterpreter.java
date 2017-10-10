@@ -108,7 +108,7 @@ private String command;
      */
 
     private void quitCommand() {
-        outputStream.println("¢xNOTIFICATION¢x¢Goodbye");
+        outputStream.println("x¢NOTIFICATION¢x¢Goodbye");
         userList.removeUser(this.user);
         killSwitch = false;
     }
