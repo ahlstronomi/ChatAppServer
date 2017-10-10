@@ -8,12 +8,12 @@ import java.util.Set;
  * SINGELTON CLASS
  * MIKAEL AHLSTRÖM
  * ICT16-M
- *
+ * <p>
  * METHODS:
- *  insert(ChatMessage message)
- *  sendMessage(ChatMessage message)
- *  register(ChatHistoryObserver o)
- *  toString()
+ * insert(ChatMessage message)
+ * sendMessage(ChatMessage message)
+ * register(ChatHistoryObserver o)
+ * toString()
  */
 
 public class ChatHistory implements Observable {
@@ -40,7 +40,6 @@ public class ChatHistory implements Observable {
 
     /**
      * Sends the message to all other users in the same chat.
-     *
      * @param message Message sent by the user.
      */
 
@@ -53,7 +52,6 @@ public class ChatHistory implements Observable {
 
     /**
      * Register a CI as a observer.
-     *
      * @param o CI
      */
 
@@ -63,7 +61,6 @@ public class ChatHistory implements Observable {
 
     /**
      * Remove the observer from the observer set
-     *
      * @param o CI
      */
 

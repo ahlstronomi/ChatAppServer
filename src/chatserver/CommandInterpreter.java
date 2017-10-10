@@ -10,24 +10,23 @@ import java.util.Scanner;
  * AUTHOR: Mikael Ahlström
  * ICT16-M
  * This class reads the user input and does things with
- *
+ * <p>
  * METHODS:
- *  run()
- *  userInput()
- *  quitCommand()
- *  usersCommand()
- *  msgsCommand()
- *  setUserName(String name)
- *  helpCommand()
- *  update(ChatMessage m)
- *  commandProcessor()
- *  updateUsers(User u)
- *
+ * run()
+ * userInput()
+ * quitCommand()
+ * usersCommand()
+ * msgsCommand()
+ * setUserName(String name)
+ * helpCommand()
+ * update(ChatMessage m)
+ * commandProcessor()
+ * updateUsers(User u)
  */
 
 class CommandInterpreter implements Runnable, ChatHistoryObserver, UserNameListObserver {
 
-private String command;
+    private String command;
     private boolean killSwitch = true;
     private ChatHistory history = ChatHistory.getInstance();
     private InputStream inputStream;
@@ -39,12 +38,10 @@ private String command;
 
 
     public CommandInterpreter(InputStream inputStream, PrintStream outputStream) {
-
-
         this.inputStream = inputStream;
         this.outputStream = outputStream;
         this.in = new Scanner(inputStream);
-        this.user = new User("",userList.getUserId());
+        this.user = new User("", userList.getUserId());
     }
 
     // You ask why I have this empty constructor here? Well I don't know either, but it won't work without it :D
@@ -56,20 +53,8 @@ private String command;
 
         try {
 
-            /*
-            outputStream.println("\n**** Welcome to ChatApp ****");
-            outputStream.println("If you want to start chatting, please enter the command \n!user anyName1 to log in.");
-            outputStream.println("After logging in you can send messages with just typing your message and pressing the enter key.");
-            outputStream.println("If you want to see all possible commands, type !help \n");
-
-            outputStream.println("Please enter a username: ");
-            */
-
-
             command = in.nextLine();
             setUserName(command);
-
-
 
             while (killSwitch) {
                 userInput();
@@ -83,10 +68,6 @@ private String command;
             e.printStackTrace();
         }
 
-
-
-
-
     }
 
 
@@ -95,16 +76,14 @@ private String command;
      */
 
     private void userInput() {
-        if(in.hasNext()) {
+        if (in.hasNext()) {
             command = in.nextLine();
             commandProcessor();
         }
     }
 
     /**
-     * COMMAND:
-     * Quit the chat and logout.
-     * Removes user from the username.
+     * COMMAND: Quit the chat and logout. Removes user from the username.
      */
 
     private void quitCommand() {
@@ -114,8 +93,7 @@ private String command;
     }
 
     /**
-     * COMMAND:
-     * Print out the userlist.
+     * COMMAND: Print out the userlist.
      */
 
     private void usersCommand() {
@@ -123,8 +101,7 @@ private String command;
     }
 
     /**
-     * COMMAND:
-     * Print out the message history
+     * COMMAND: Print out the message history
      */
 
     private void msgsCommand() {
@@ -133,10 +110,7 @@ private String command;
 
 
     /**
-     * COMMAND:
-     * Set the username or change it if you already have one.
-     * The username can't be longer than 9 characters.
-     *
+     * COMMAND: Set the username or change it if you already have one. The username can't be longer than 9 characters.
      * @param name Desired username of the client
      */
 
@@ -157,8 +131,7 @@ private String command;
 
 
     /**
-     * COMMAND:
-     * Print out this very helpful list if you don know what to do
+     * COMMAND: Print out this very helpful list if you don know what to do
      */
 
     private void helpCommand() {
@@ -181,8 +154,7 @@ private String command;
     }
 
     /**
-     * Reads the user input and decides what to do with it
-     * if the input starts with a !-character it is interpreted as a command
+     * Reads the user input and decides what to do with it. If the input starts with a !-character it is interpreted as a command
      */
 
     private void commandProcessor() {
@@ -215,8 +187,13 @@ private String command;
 
     }
 
+    /**
+     * User login notification
+     * @param u User object
+     */
+
     @Override
     public void updateUsers(User u) {
-        outputStream.println("x¢NOTIFICATION¢" + u.getUserId() + "¢" +  u.getUsername() + " Logged in");
+        outputStream.println("x¢NOTIFICATION¢" + u.getUserId() + "¢" + u.getUsername() + " Logged in");
     }
 }

@@ -7,10 +7,10 @@ import java.util.Date;
 /**
  * MIKAEL AHLSTRÖM
  * ICT16-M
- *
+ * <p>
  * Methods:
- *  getSenderName()
- *  toString()
+ * getSenderName()
+ * toString()
  */
 
 public class ChatMessage extends CommandInterpreter {
@@ -34,7 +34,7 @@ public class ChatMessage extends CommandInterpreter {
 
     @Override
     public String toString() {
-        String s =this.senderId + "¢" + this.senderName + "¢" + this.timeStamp + "¢" + this.message;
+        String s = this.senderId + "¢" + this.senderName + "¢" + this.timeStamp + "¢" + this.message;
         return s;
     }
 }

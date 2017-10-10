@@ -9,14 +9,14 @@ import java.util.Set;
  * SINGLETON JAVA CLASS
  * Mikael Ahlström
  * ICT16-M
- *
+ * <p>
  * METHODS:
- *  addUser()
- *  removeUser()
- *  toString()
- *  register()
- *  deregister()
- *  logInNotification()
+ * addUser()
+ * removeUser()
+ * toString()
+ * register()
+ * deregister()
+ * logInNotification()
  */
 
 public class UserNameList extends CommandInterpreter {
@@ -40,9 +40,7 @@ public class UserNameList extends CommandInterpreter {
 
     /**
      * Add a new user to the user list if it doesn't already contain that user.
-     *
-     * @param u
-     * New user
+     * @param u New user
      */
 
     public void addUser(User u) {
@@ -54,9 +52,7 @@ public class UserNameList extends CommandInterpreter {
 
     /**
      * Remove the user from the user list. This is done when a user logs out from the chat.
-     *
-     * @param u
-     * User logging out
+     * @param u User logging out
      */
 
     public void removeUser(User u) {
@@ -66,8 +62,7 @@ public class UserNameList extends CommandInterpreter {
     }
 
     /**
-     * @return
-     * Print out the list as a beautiful string.
+     * @return Print out the list as a beautiful string.
      */
 
     public String toString() {
@@ -83,7 +78,7 @@ public class UserNameList extends CommandInterpreter {
 
     }
 
-    public int getUserId(){
+    public int getUserId() {
         runningUserId++;
         return runningUserId;
     }
